@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, Text } from 'react-native';
+import { Pressable, TextInput, Button, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Login = () => {
@@ -29,7 +29,14 @@ const Login = () => {
                 onChangeText={setPassword}
                 secureTextEntry
             />
-            <Button title="Login" onPress={handleLogin} />
+            <Pressable
+                className="p-4 bg-blue-700 dark:bg-black w-[80vw] items-center active:bg-red-800"
+                onPress={handleLogin}
+            >
+                <Text className="text-white">
+                    Login
+                </Text>
+            </Pressable>
         </SafeAreaView>
     );
 };
