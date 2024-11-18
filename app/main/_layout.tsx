@@ -1,23 +1,16 @@
-import { Tabs } from 'expo-router';
-import { DashboardIcon, HomeIcon } from '../../components/Icons';
+import { Drawer } from 'expo-router/drawer';
 
 const TabsLayout = () => {
-    return <Tabs>
-        <Tabs.Screen
-            name="dashboardContainer"
-            options={{
-                title: 'Dashboard',
-                tabBarIcon: ({color}) => <DashboardIcon color={color} />,
-            }}
-        />
-        <Tabs.Screen
-            name="about"
-            options={{
-                title: 'About',
-                tabBarIcon: ({color}) => <HomeIcon color={color} />,
-            }}
-        />
-    </Tabs>;
+    return (
+        <Drawer>
+            <Drawer.Screen
+                name="pages/dashboardContainer"
+                options={{
+                    title: 'Dashboard',
+                }}
+            />
+        </Drawer>
+    );
 }
 
 export default TabsLayout;

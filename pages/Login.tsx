@@ -30,7 +30,7 @@ const Login = () => {
                 onChangeText={setPassword}
                 secureTextEntry
             />
-            <Link asChild href="main/dashboardContainer">
+            <Link asChild href="main">
                 <Pressable
                     className="p-4 bg-blue-700 dark:bg-black w-[80vw] items-center active:bg-red-800"
                     onPress={handleLogin}
