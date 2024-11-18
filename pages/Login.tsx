@@ -17,14 +17,14 @@ const Login = () => {
         <SafeAreaView className="flex-1 justify-center items-center p-1">
             <Text className="mb-2">Username</Text>
             <TextInput
-                className="h-15 w-[80vw] border border-gray-400 mb-4 px-2"
+                className="h-[45px] w-[80vw] border border-gray-400 mb-4 px-2"
                 placeholder="Enter username"
                 value={username}
                 onChangeText={setUsername}
             />
             <Text className="mb-2">Password</Text>
             <TextInput
-                className="h-15 w-[80vw] border border-gray-400 mb-4 px-2"
+                className="h-[45px] w-[80vw] border border-gray-400 mb-4 px-2"
                 placeholder="Enter password"
                 value={password}
                 onChangeText={setPassword}
