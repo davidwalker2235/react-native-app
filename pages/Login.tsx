@@ -1,6 +1,6 @@
 import { Link } from 'expo-router';
 import React, { useState } from 'react';
-import { Pressable, TextInput, Button, Text } from 'react-native';
+import { Pressable, TextInput, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Login = () => {

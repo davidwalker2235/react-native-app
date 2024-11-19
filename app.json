@@ -20,7 +20,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.davidwalker2235.reactnativeapp"
     },
     "web": {
       "favicon": "./assets/favicon.png",
